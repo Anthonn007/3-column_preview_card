@@ -1,0 +1,127 @@
+:root{
+    /* primary */
+    --Bright_orange: hsl(31, 77%, 52%);
+    --Dark_cyan: hsl(184, 100%, 22%);
+    --Very_dark_cyan: hsl(179, 100%, 13%);
+
+    /* neutral */
+    --Transparent_white: hsla(0, 0%, 100%, 0.75); /*(paragraphs)*/
+    --Very_light_gray: hsl(0, 0%, 95%); /*(background, headings, buttons)*/
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--Very_light_gray);
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article{
+    position: relative;
+    margin: 30px;
+    border-radius: 10px;
+    max-width: 550px;
+    overflow: hidden;
+}
+
+.section_sedan{
+    background: var(--Bright_orange);
+}
+
+.section_suv{
+    background: var(--Dark_cyan);
+}
+
+.section_luxury{
+    background: var(--Very_dark_cyan);
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    padding: 60px;
+    line-height: 1.5;
+}
+
+.title_info{
+    margin: 30px 0;
+    font-family: "Big Shoulders Display", sans-serif;
+    font-size: 40px;
+    color: var(--Very_light_gray);
+}
+
+.info_p{
+    margin-bottom: 30px;
+    font-family: "Lexend Deca", sans-serif;
+    color: var(--Transparent_white);
+}
+
+.btn_more button{
+    padding: 15px 30px;
+    border: 2px solid var(--Very_light_gray);
+    border-radius: 50px;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn_more button:hover{
+    background: transparent;
+    color: var(--Very_light_gray);
+}
+
+.btn_sed{
+    color: var(--Bright_orange);
+}
+
+.btn_suv{
+    color: var(--Dark_cyan);
+}
+
+.btn_lux{
+    color: var(--Very_dark_cyan);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (min-width: 870px){
+
+    main{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    article{
+        max-width: 870px;
+    }
+
+    .cont_article{
+        display: flex;
+    }
+
+    .content{
+        padding: 30px;
+    }
+
+    .info{
+        margin-bottom: 90px;
+    }
+}
